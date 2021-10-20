@@ -174,7 +174,6 @@ const renderSlides = spec => {
             "data-index": key,
             tabIndex: "-1",
             className: classnames(slideClasses, slideClass),
-            "aria-hidden": !slideClasses["slick-active"],
             style: { ...(child.props.style || {}), ...childStyle },
             onClick: e => {
               child.props && child.props.onClick && child.props.onClick(e);
